@@ -2,6 +2,7 @@
 // ======================================================
 $(document).ready(function(){
     $("#mobileBtn").click(function(){
+        $(this).toggleClass("mobileActive");
         $("#mobileMenu").toggleClass("max-h-screen overflow-y-auto");
     });
 

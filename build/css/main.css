@@ -613,10 +613,6 @@ p{
   margin-bottom: 1.5rem;
 }
 
-a:hover, button:hover {
-  opacity: 0.8;
-}
-
 a:focus, button:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -637,6 +633,27 @@ a, button {
   --tw-bg-opacity: 1;
   background-color: rgba(144, 98, 189, var(--tw-bg-opacity));
   --tw-translate-y: -1.75rem;
+}
+
+#mobileBtn.mobileActive #mobileOpen{
+  opacity: 0;
+  --tw-rotate: 180deg;
+}
+
+#mobileBtn.mobileActive #mobileClose{
+  opacity: 1;
+  --tw-rotate: 180deg;
+}
+
+.linearBtn{
+  background: linear-gradient(272.63deg, #FFFFFF 42.71%, rgba(255, 255, 255, 0) 56.33%);
+  border-radius: 0px 0px 10px 10px;
+}
+
+@media only screen and (max-width: 640px) {
+  .linearBtn{
+    background: #fff;
+  }
 }
 
 .container {

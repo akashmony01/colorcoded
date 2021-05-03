@@ -60,7 +60,7 @@
 
     a,
     button{
-        @apply duration-300 focus:outline-none hover:opacity-80;
+        @apply duration-300 focus:outline-none;
     }
 
     .productItem:hover .productLink{
@@ -69,6 +69,25 @@
 
     .productItem:hover .productLink span{
         @apply bg-primary -translate-y-7;
+    }
+
+    #mobileBtn.mobileActive #mobileOpen{
+        @apply opacity-0 rotate-180;
+    }
+
+    #mobileBtn.mobileActive #mobileClose{
+        @apply opacity-100 rotate-180;
+    }
+
+    .linearBtn{
+        background: linear-gradient(272.63deg, #FFFFFF 42.71%, rgba(255, 255, 255, 0) 56.33%);
+                        border-radius: 0px 0px 10px 10px;
+    }
+
+    @media only screen and (max-width: 640px) {
+        .linearBtn{
+            background: #fff;
+        }
     }
 }
 
