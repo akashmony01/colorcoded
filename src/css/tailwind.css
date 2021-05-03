@@ -89,6 +89,14 @@
             background: #fff;
         }
     }
+
+    .ftCnt{
+        @apply duration-300 max-h-0 overflow-hidden;
+    }
+
+    .ftCnt.activeFilter{
+        @apply max-h-screen overflow-y-auto pb-5;
+    }
 }
 
 

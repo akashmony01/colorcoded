@@ -34,3 +34,10 @@ $(document).ready(function(){
         }
     })
 });
+
+// all products filter
+$(document).ready(function(){
+    $(".ftBtn").click(function(){
+        $(this).siblings(".ftCnt").toggleClass("activeFilter");
+    });
+});

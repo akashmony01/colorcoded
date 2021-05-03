@@ -656,6 +656,18 @@ a, button {
   }
 }
 
+.ftCnt{
+  max-height: 0px;
+  overflow: hidden;
+  transition-duration: 300ms;
+}
+
+.ftCnt.activeFilter{
+  max-height: 100vh;
+  overflow-y: auto;
+  padding-bottom: 1.25rem;
+}
+
 .container {
   width: 100%;
   margin-right: auto;
