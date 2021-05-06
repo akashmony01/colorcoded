@@ -12,6 +12,7 @@ $(document).ready(function(){
 });
 
 // home slider
+// ======================================================
 $(document).ready(function(){
     $('.homeSlider.owl-carousel').owlCarousel({
         loop:true,
@@ -36,8 +37,34 @@ $(document).ready(function(){
 });
 
 // all products filter
+// ======================================================
 $(document).ready(function(){
+    // main filter box
     $(".ftBtn").click(function(){
         $(this).siblings(".ftCnt").toggleClass("activeFilter");
+    });
+
+    // color icon
+    $(".colorCnt").click(function(){
+        $(this).siblings(".colorCnt").removeClass("border-secondery opacity-60");
+        $(this).addClass("border-secondery opacity-60");
+    });
+});
+
+
+// all products details slider
+// ======================================================
+$(document).ready(function(){
+    // main filter box
+    $(".tmbImg").click(function(){
+        var curentImg = $(this).find("img").attr("src");
+
+        // set thumb active
+        $(".tmbImg").removeClass("border-primary opacity-60");
+        $(this).addClass("border-primary opacity-60");
+
+        // set src for main img
+        $('#mainImg').attr('src', curentImg);
+
     });
 });

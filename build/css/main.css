@@ -12063,91 +12063,55 @@ a, button {
 }
 
 .text-xs {
-  font-size: .75rem;
+  font-size: 11px;
 }
 
 .text-sm {
-  font-size: .875rem;
+  font-size: 13px;
 }
 
 .text-base {
-  font-size: 1rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-}
-
-.text-6xl {
-  font-size: 4rem;
-}
-
-.text-70px {
-  font-size: 70px;
-}
-
-.text-63px {
-  font-size: 63px;
-}
-
-.text-37px {
-  font-size: 37px;
-}
-
-.text-35px {
-  font-size: 35px;
-}
-
-.text-31px {
-  font-size: 31px;
-}
-
-.text-26px {
-  font-size: 26px;
-}
-
-.text-20px {
-  font-size: 20px;
-}
-
-.text-19px {
-  font-size: 19px;
-}
-
-.text-18px {
-  font-size: 18px;
-}
-
-.text-17px {
-  font-size: 17px;
-}
-
-.text-16px {
   font-size: 16px;
 }
 
-.text-13px {
-  font-size: 13px;
+.text-lg {
+  font-size: 17px;
+}
+
+.text-xl {
+  font-size: 18px;
+}
+
+.text-2xl {
+  font-size: 19px;
+}
+
+.text-3xl {
+  font-size: 20px;
+}
+
+.text-4xl {
+  font-size: 26px;
+}
+
+.text-5xl {
+  font-size: 31px;
+}
+
+.text-6xl {
+  font-size: 35px;
+}
+
+.text-7xl {
+  font-size: 37px;
+}
+
+.text-8xl {
+  font-size: 63px;
+}
+
+.text-9xl {
+  font-size: 70px;
 }
 
 .leading-3 {
@@ -28526,15 +28490,15 @@ a, button {
 }
 
 .tracking-tightest {
-  letter-spacing: -.075em;
+  letter-spacing: -2%;
 }
 
 .tracking-tighter {
-  letter-spacing: -.05em;
+  letter-spacing: -1.5%;
 }
 
 .tracking-tight {
-  letter-spacing: -.025em;
+  letter-spacing: -1%;
 }
 
 .tracking-normal {
@@ -28542,39 +28506,15 @@ a, button {
 }
 
 .tracking-wide {
-  letter-spacing: .025em;
-}
-
-.tracking-wider {
-  letter-spacing: .05em;
-}
-
-.tracking-widest {
-  letter-spacing: .25em;
-}
-
-.tracking-p2pt {
-  letter-spacing: 2%;
-}
-
-.tracking-m2pt {
-  letter-spacing: -2%;
-}
-
-.tracking-p15pt {
-  letter-spacing: 1.5%;
-}
-
-.tracking-m15pt {
-  letter-spacing: -1.5%;
-}
-
-.tracking-p1pt {
   letter-spacing: 1%;
 }
 
-.tracking-m1pt {
-  letter-spacing: -1%;
+.tracking-wider {
+  letter-spacing: 1.5%;
+}
+
+.tracking-widest {
+  letter-spacing: 2%;
 }
 
 .select-none {
@@ -33407,6 +33347,14 @@ a, button {
 .animate-bounce {
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
 
 /* owl carousel home */
@@ -44838,91 +44786,55 @@ a, button {
   }
 
   .sm\:text-xs {
-    font-size: .75rem;
+    font-size: 11px;
   }
 
   .sm\:text-sm {
-    font-size: .875rem;
+    font-size: 13px;
   }
 
   .sm\:text-base {
-    font-size: 1rem;
-  }
-
-  .sm\:text-lg {
-    font-size: 1.125rem;
-  }
-
-  .sm\:text-xl {
-    font-size: 1.25rem;
-  }
-
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-  }
-
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-  }
-
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-  }
-
-  .sm\:text-5xl {
-    font-size: 3rem;
-  }
-
-  .sm\:text-6xl {
-    font-size: 4rem;
-  }
-
-  .sm\:text-70px {
-    font-size: 70px;
-  }
-
-  .sm\:text-63px {
-    font-size: 63px;
-  }
-
-  .sm\:text-37px {
-    font-size: 37px;
-  }
-
-  .sm\:text-35px {
-    font-size: 35px;
-  }
-
-  .sm\:text-31px {
-    font-size: 31px;
-  }
-
-  .sm\:text-26px {
-    font-size: 26px;
-  }
-
-  .sm\:text-20px {
-    font-size: 20px;
-  }
-
-  .sm\:text-19px {
-    font-size: 19px;
-  }
-
-  .sm\:text-18px {
-    font-size: 18px;
-  }
-
-  .sm\:text-17px {
-    font-size: 17px;
-  }
-
-  .sm\:text-16px {
     font-size: 16px;
   }
 
-  .sm\:text-13px {
-    font-size: 13px;
+  .sm\:text-lg {
+    font-size: 17px;
+  }
+
+  .sm\:text-xl {
+    font-size: 18px;
+  }
+
+  .sm\:text-2xl {
+    font-size: 19px;
+  }
+
+  .sm\:text-3xl {
+    font-size: 20px;
+  }
+
+  .sm\:text-4xl {
+    font-size: 26px;
+  }
+
+  .sm\:text-5xl {
+    font-size: 31px;
+  }
+
+  .sm\:text-6xl {
+    font-size: 35px;
+  }
+
+  .sm\:text-7xl {
+    font-size: 37px;
+  }
+
+  .sm\:text-8xl {
+    font-size: 63px;
+  }
+
+  .sm\:text-9xl {
+    font-size: 70px;
   }
 
   .sm\:leading-3 {
@@ -61288,15 +61200,15 @@ a, button {
   }
 
   .sm\:tracking-tightest {
-    letter-spacing: -.075em;
+    letter-spacing: -2%;
   }
 
   .sm\:tracking-tighter {
-    letter-spacing: -.05em;
+    letter-spacing: -1.5%;
   }
 
   .sm\:tracking-tight {
-    letter-spacing: -.025em;
+    letter-spacing: -1%;
   }
 
   .sm\:tracking-normal {
@@ -61304,39 +61216,15 @@ a, button {
   }
 
   .sm\:tracking-wide {
-    letter-spacing: .025em;
-  }
-
-  .sm\:tracking-wider {
-    letter-spacing: .05em;
-  }
-
-  .sm\:tracking-widest {
-    letter-spacing: .25em;
-  }
-
-  .sm\:tracking-p2pt {
-    letter-spacing: 2%;
-  }
-
-  .sm\:tracking-m2pt {
-    letter-spacing: -2%;
-  }
-
-  .sm\:tracking-p15pt {
-    letter-spacing: 1.5%;
-  }
-
-  .sm\:tracking-m15pt {
-    letter-spacing: -1.5%;
-  }
-
-  .sm\:tracking-p1pt {
     letter-spacing: 1%;
   }
 
-  .sm\:tracking-m1pt {
-    letter-spacing: -1%;
+  .sm\:tracking-wider {
+    letter-spacing: 1.5%;
+  }
+
+  .sm\:tracking-widest {
+    letter-spacing: 2%;
   }
 
   .sm\:select-none {
@@ -77502,91 +77390,55 @@ a, button {
   }
 
   .md\:text-xs {
-    font-size: .75rem;
+    font-size: 11px;
   }
 
   .md\:text-sm {
-    font-size: .875rem;
+    font-size: 13px;
   }
 
   .md\:text-base {
-    font-size: 1rem;
-  }
-
-  .md\:text-lg {
-    font-size: 1.125rem;
-  }
-
-  .md\:text-xl {
-    font-size: 1.25rem;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-  }
-
-  .md\:text-3xl {
-    font-size: 1.875rem;
-  }
-
-  .md\:text-4xl {
-    font-size: 2.25rem;
-  }
-
-  .md\:text-5xl {
-    font-size: 3rem;
-  }
-
-  .md\:text-6xl {
-    font-size: 4rem;
-  }
-
-  .md\:text-70px {
-    font-size: 70px;
-  }
-
-  .md\:text-63px {
-    font-size: 63px;
-  }
-
-  .md\:text-37px {
-    font-size: 37px;
-  }
-
-  .md\:text-35px {
-    font-size: 35px;
-  }
-
-  .md\:text-31px {
-    font-size: 31px;
-  }
-
-  .md\:text-26px {
-    font-size: 26px;
-  }
-
-  .md\:text-20px {
-    font-size: 20px;
-  }
-
-  .md\:text-19px {
-    font-size: 19px;
-  }
-
-  .md\:text-18px {
-    font-size: 18px;
-  }
-
-  .md\:text-17px {
-    font-size: 17px;
-  }
-
-  .md\:text-16px {
     font-size: 16px;
   }
 
-  .md\:text-13px {
-    font-size: 13px;
+  .md\:text-lg {
+    font-size: 17px;
+  }
+
+  .md\:text-xl {
+    font-size: 18px;
+  }
+
+  .md\:text-2xl {
+    font-size: 19px;
+  }
+
+  .md\:text-3xl {
+    font-size: 20px;
+  }
+
+  .md\:text-4xl {
+    font-size: 26px;
+  }
+
+  .md\:text-5xl {
+    font-size: 31px;
+  }
+
+  .md\:text-6xl {
+    font-size: 35px;
+  }
+
+  .md\:text-7xl {
+    font-size: 37px;
+  }
+
+  .md\:text-8xl {
+    font-size: 63px;
+  }
+
+  .md\:text-9xl {
+    font-size: 70px;
   }
 
   .md\:leading-3 {
@@ -93952,15 +93804,15 @@ a, button {
   }
 
   .md\:tracking-tightest {
-    letter-spacing: -.075em;
+    letter-spacing: -2%;
   }
 
   .md\:tracking-tighter {
-    letter-spacing: -.05em;
+    letter-spacing: -1.5%;
   }
 
   .md\:tracking-tight {
-    letter-spacing: -.025em;
+    letter-spacing: -1%;
   }
 
   .md\:tracking-normal {
@@ -93968,39 +93820,15 @@ a, button {
   }
 
   .md\:tracking-wide {
-    letter-spacing: .025em;
-  }
-
-  .md\:tracking-wider {
-    letter-spacing: .05em;
-  }
-
-  .md\:tracking-widest {
-    letter-spacing: .25em;
-  }
-
-  .md\:tracking-p2pt {
-    letter-spacing: 2%;
-  }
-
-  .md\:tracking-m2pt {
-    letter-spacing: -2%;
-  }
-
-  .md\:tracking-p15pt {
-    letter-spacing: 1.5%;
-  }
-
-  .md\:tracking-m15pt {
-    letter-spacing: -1.5%;
-  }
-
-  .md\:tracking-p1pt {
     letter-spacing: 1%;
   }
 
-  .md\:tracking-m1pt {
-    letter-spacing: -1%;
+  .md\:tracking-wider {
+    letter-spacing: 1.5%;
+  }
+
+  .md\:tracking-widest {
+    letter-spacing: 2%;
   }
 
   .md\:select-none {
@@ -110166,91 +109994,55 @@ a, button {
   }
 
   .lg\:text-xs {
-    font-size: .75rem;
+    font-size: 11px;
   }
 
   .lg\:text-sm {
-    font-size: .875rem;
+    font-size: 13px;
   }
 
   .lg\:text-base {
-    font-size: 1rem;
-  }
-
-  .lg\:text-lg {
-    font-size: 1.125rem;
-  }
-
-  .lg\:text-xl {
-    font-size: 1.25rem;
-  }
-
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-  }
-
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-  }
-
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-  }
-
-  .lg\:text-5xl {
-    font-size: 3rem;
-  }
-
-  .lg\:text-6xl {
-    font-size: 4rem;
-  }
-
-  .lg\:text-70px {
-    font-size: 70px;
-  }
-
-  .lg\:text-63px {
-    font-size: 63px;
-  }
-
-  .lg\:text-37px {
-    font-size: 37px;
-  }
-
-  .lg\:text-35px {
-    font-size: 35px;
-  }
-
-  .lg\:text-31px {
-    font-size: 31px;
-  }
-
-  .lg\:text-26px {
-    font-size: 26px;
-  }
-
-  .lg\:text-20px {
-    font-size: 20px;
-  }
-
-  .lg\:text-19px {
-    font-size: 19px;
-  }
-
-  .lg\:text-18px {
-    font-size: 18px;
-  }
-
-  .lg\:text-17px {
-    font-size: 17px;
-  }
-
-  .lg\:text-16px {
     font-size: 16px;
   }
 
-  .lg\:text-13px {
-    font-size: 13px;
+  .lg\:text-lg {
+    font-size: 17px;
+  }
+
+  .lg\:text-xl {
+    font-size: 18px;
+  }
+
+  .lg\:text-2xl {
+    font-size: 19px;
+  }
+
+  .lg\:text-3xl {
+    font-size: 20px;
+  }
+
+  .lg\:text-4xl {
+    font-size: 26px;
+  }
+
+  .lg\:text-5xl {
+    font-size: 31px;
+  }
+
+  .lg\:text-6xl {
+    font-size: 35px;
+  }
+
+  .lg\:text-7xl {
+    font-size: 37px;
+  }
+
+  .lg\:text-8xl {
+    font-size: 63px;
+  }
+
+  .lg\:text-9xl {
+    font-size: 70px;
   }
 
   .lg\:leading-3 {
@@ -126616,15 +126408,15 @@ a, button {
   }
 
   .lg\:tracking-tightest {
-    letter-spacing: -.075em;
+    letter-spacing: -2%;
   }
 
   .lg\:tracking-tighter {
-    letter-spacing: -.05em;
+    letter-spacing: -1.5%;
   }
 
   .lg\:tracking-tight {
-    letter-spacing: -.025em;
+    letter-spacing: -1%;
   }
 
   .lg\:tracking-normal {
@@ -126632,39 +126424,15 @@ a, button {
   }
 
   .lg\:tracking-wide {
-    letter-spacing: .025em;
-  }
-
-  .lg\:tracking-wider {
-    letter-spacing: .05em;
-  }
-
-  .lg\:tracking-widest {
-    letter-spacing: .25em;
-  }
-
-  .lg\:tracking-p2pt {
-    letter-spacing: 2%;
-  }
-
-  .lg\:tracking-m2pt {
-    letter-spacing: -2%;
-  }
-
-  .lg\:tracking-p15pt {
-    letter-spacing: 1.5%;
-  }
-
-  .lg\:tracking-m15pt {
-    letter-spacing: -1.5%;
-  }
-
-  .lg\:tracking-p1pt {
     letter-spacing: 1%;
   }
 
-  .lg\:tracking-m1pt {
-    letter-spacing: -1%;
+  .lg\:tracking-wider {
+    letter-spacing: 1.5%;
+  }
+
+  .lg\:tracking-widest {
+    letter-spacing: 2%;
   }
 
   .lg\:select-none {
@@ -142830,91 +142598,55 @@ a, button {
   }
 
   .xl\:text-xs {
-    font-size: .75rem;
+    font-size: 11px;
   }
 
   .xl\:text-sm {
-    font-size: .875rem;
+    font-size: 13px;
   }
 
   .xl\:text-base {
-    font-size: 1rem;
-  }
-
-  .xl\:text-lg {
-    font-size: 1.125rem;
-  }
-
-  .xl\:text-xl {
-    font-size: 1.25rem;
-  }
-
-  .xl\:text-2xl {
-    font-size: 1.5rem;
-  }
-
-  .xl\:text-3xl {
-    font-size: 1.875rem;
-  }
-
-  .xl\:text-4xl {
-    font-size: 2.25rem;
-  }
-
-  .xl\:text-5xl {
-    font-size: 3rem;
-  }
-
-  .xl\:text-6xl {
-    font-size: 4rem;
-  }
-
-  .xl\:text-70px {
-    font-size: 70px;
-  }
-
-  .xl\:text-63px {
-    font-size: 63px;
-  }
-
-  .xl\:text-37px {
-    font-size: 37px;
-  }
-
-  .xl\:text-35px {
-    font-size: 35px;
-  }
-
-  .xl\:text-31px {
-    font-size: 31px;
-  }
-
-  .xl\:text-26px {
-    font-size: 26px;
-  }
-
-  .xl\:text-20px {
-    font-size: 20px;
-  }
-
-  .xl\:text-19px {
-    font-size: 19px;
-  }
-
-  .xl\:text-18px {
-    font-size: 18px;
-  }
-
-  .xl\:text-17px {
-    font-size: 17px;
-  }
-
-  .xl\:text-16px {
     font-size: 16px;
   }
 
-  .xl\:text-13px {
-    font-size: 13px;
+  .xl\:text-lg {
+    font-size: 17px;
+  }
+
+  .xl\:text-xl {
+    font-size: 18px;
+  }
+
+  .xl\:text-2xl {
+    font-size: 19px;
+  }
+
+  .xl\:text-3xl {
+    font-size: 20px;
+  }
+
+  .xl\:text-4xl {
+    font-size: 26px;
+  }
+
+  .xl\:text-5xl {
+    font-size: 31px;
+  }
+
+  .xl\:text-6xl {
+    font-size: 35px;
+  }
+
+  .xl\:text-7xl {
+    font-size: 37px;
+  }
+
+  .xl\:text-8xl {
+    font-size: 63px;
+  }
+
+  .xl\:text-9xl {
+    font-size: 70px;
   }
 
   .xl\:leading-3 {
@@ -159280,15 +159012,15 @@ a, button {
   }
 
   .xl\:tracking-tightest {
-    letter-spacing: -.075em;
+    letter-spacing: -2%;
   }
 
   .xl\:tracking-tighter {
-    letter-spacing: -.05em;
+    letter-spacing: -1.5%;
   }
 
   .xl\:tracking-tight {
-    letter-spacing: -.025em;
+    letter-spacing: -1%;
   }
 
   .xl\:tracking-normal {
@@ -159296,39 +159028,15 @@ a, button {
   }
 
   .xl\:tracking-wide {
-    letter-spacing: .025em;
-  }
-
-  .xl\:tracking-wider {
-    letter-spacing: .05em;
-  }
-
-  .xl\:tracking-widest {
-    letter-spacing: .25em;
-  }
-
-  .xl\:tracking-p2pt {
-    letter-spacing: 2%;
-  }
-
-  .xl\:tracking-m2pt {
-    letter-spacing: -2%;
-  }
-
-  .xl\:tracking-p15pt {
-    letter-spacing: 1.5%;
-  }
-
-  .xl\:tracking-m15pt {
-    letter-spacing: -1.5%;
-  }
-
-  .xl\:tracking-p1pt {
     letter-spacing: 1%;
   }
 
-  .xl\:tracking-m1pt {
-    letter-spacing: -1%;
+  .xl\:tracking-wider {
+    letter-spacing: 1.5%;
+  }
+
+  .xl\:tracking-widest {
+    letter-spacing: 2%;
   }
 
   .xl\:select-none {
@@ -175494,91 +175202,55 @@ a, button {
   }
 
   .\32xl\:text-xs {
-    font-size: .75rem;
+    font-size: 11px;
   }
 
   .\32xl\:text-sm {
-    font-size: .875rem;
+    font-size: 13px;
   }
 
   .\32xl\:text-base {
-    font-size: 1rem;
-  }
-
-  .\32xl\:text-lg {
-    font-size: 1.125rem;
-  }
-
-  .\32xl\:text-xl {
-    font-size: 1.25rem;
-  }
-
-  .\32xl\:text-2xl {
-    font-size: 1.5rem;
-  }
-
-  .\32xl\:text-3xl {
-    font-size: 1.875rem;
-  }
-
-  .\32xl\:text-4xl {
-    font-size: 2.25rem;
-  }
-
-  .\32xl\:text-5xl {
-    font-size: 3rem;
-  }
-
-  .\32xl\:text-6xl {
-    font-size: 4rem;
-  }
-
-  .\32xl\:text-70px {
-    font-size: 70px;
-  }
-
-  .\32xl\:text-63px {
-    font-size: 63px;
-  }
-
-  .\32xl\:text-37px {
-    font-size: 37px;
-  }
-
-  .\32xl\:text-35px {
-    font-size: 35px;
-  }
-
-  .\32xl\:text-31px {
-    font-size: 31px;
-  }
-
-  .\32xl\:text-26px {
-    font-size: 26px;
-  }
-
-  .\32xl\:text-20px {
-    font-size: 20px;
-  }
-
-  .\32xl\:text-19px {
-    font-size: 19px;
-  }
-
-  .\32xl\:text-18px {
-    font-size: 18px;
-  }
-
-  .\32xl\:text-17px {
-    font-size: 17px;
-  }
-
-  .\32xl\:text-16px {
     font-size: 16px;
   }
 
-  .\32xl\:text-13px {
-    font-size: 13px;
+  .\32xl\:text-lg {
+    font-size: 17px;
+  }
+
+  .\32xl\:text-xl {
+    font-size: 18px;
+  }
+
+  .\32xl\:text-2xl {
+    font-size: 19px;
+  }
+
+  .\32xl\:text-3xl {
+    font-size: 20px;
+  }
+
+  .\32xl\:text-4xl {
+    font-size: 26px;
+  }
+
+  .\32xl\:text-5xl {
+    font-size: 31px;
+  }
+
+  .\32xl\:text-6xl {
+    font-size: 35px;
+  }
+
+  .\32xl\:text-7xl {
+    font-size: 37px;
+  }
+
+  .\32xl\:text-8xl {
+    font-size: 63px;
+  }
+
+  .\32xl\:text-9xl {
+    font-size: 70px;
   }
 
   .\32xl\:leading-3 {
@@ -191944,15 +191616,15 @@ a, button {
   }
 
   .\32xl\:tracking-tightest {
-    letter-spacing: -.075em;
+    letter-spacing: -2%;
   }
 
   .\32xl\:tracking-tighter {
-    letter-spacing: -.05em;
+    letter-spacing: -1.5%;
   }
 
   .\32xl\:tracking-tight {
-    letter-spacing: -.025em;
+    letter-spacing: -1%;
   }
 
   .\32xl\:tracking-normal {
@@ -191960,39 +191632,15 @@ a, button {
   }
 
   .\32xl\:tracking-wide {
-    letter-spacing: .025em;
-  }
-
-  .\32xl\:tracking-wider {
-    letter-spacing: .05em;
-  }
-
-  .\32xl\:tracking-widest {
-    letter-spacing: .25em;
-  }
-
-  .\32xl\:tracking-p2pt {
-    letter-spacing: 2%;
-  }
-
-  .\32xl\:tracking-m2pt {
-    letter-spacing: -2%;
-  }
-
-  .\32xl\:tracking-p15pt {
-    letter-spacing: 1.5%;
-  }
-
-  .\32xl\:tracking-m15pt {
-    letter-spacing: -1.5%;
-  }
-
-  .\32xl\:tracking-p1pt {
     letter-spacing: 1%;
   }
 
-  .\32xl\:tracking-m1pt {
-    letter-spacing: -1%;
+  .\32xl\:tracking-wider {
+    letter-spacing: 1.5%;
+  }
+
+  .\32xl\:tracking-widest {
+    letter-spacing: 2%;
   }
 
   .\32xl\:select-none {

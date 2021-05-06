@@ -41,55 +41,37 @@ module.exports = {
       },
       padding: "1rem",
     }),
+    
     fontSize: {
-      'xs': '.75rem',
-      'sm': '.875rem',
-      'base': '1rem',
-      'lg': '1.125rem',
-      'xl': '1.25rem',
-      '2xl': '1.5rem',
-      '3xl': '1.875rem',
-      '4xl': '2.25rem',
-      '5xl': '3rem',
-      '6xl': '4rem',
-
-      // custom font size
-
-      '70px': '70px',
-      '63px': '63px',
-      '37px': '37px',
-      '35px': '35px',
-      '31px': '31px',
-      '26px': '26px',
-      '20px': '20px',
-      '19px': '19px',
-      '18px': '18px',
-      '17px': '17px',
-      '16px': '16px',
-      '13px': '13px',
+      'xs': '11px',
+      'sm': '13px',
+      'base': '16px',
+      'lg': '17px',
+      'xl': '18px',
+      '2xl': '19px',
+      '3xl': '20px',
+      '4xl': '26px',
+      '5xl': '31px',
+      '6xl': '35px',
+      '7xl': '37px',
+      '8xl': '63px',
+      '9xl': '70px',
      },
-     letterSpacing: {
-      tightest: '-.075em',
-      tighter: '-.05em',
-      tight: '-.025em',
+     
+    letterSpacing: {
+      tightest: '-2%',
+      tighter: '-1.5%',
+      tight: '-1%',
       normal: '0',
-      wide: '.025em',
-      wider: '.05em',
-      widest: '.1em',
-      widest: '.25em',
-
-      // custom letter spacing
-
-      "p2pt": '2%',
-      "m2pt": '-2%',
-      "p15pt": '1.5%',
-      "m15pt": '-1.5%',
-      "p1pt": '1%',
-      "m1pt": '-1%',
+      wide: '1%',
+      wider: '1.5%',
+      widest: '2%',
      }
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide'),
+  ],
 }

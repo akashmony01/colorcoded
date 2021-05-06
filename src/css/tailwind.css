@@ -42,7 +42,7 @@
     html,
     body{
         scroll-behavior: smooth;
-        @apply font-gpRegular text-secondery text-16px;
+        @apply font-gpRegular text-secondery text-base;
     }
 
     h1,
