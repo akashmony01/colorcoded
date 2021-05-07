@@ -7,6 +7,9 @@ module.exports = {
         primary: '#9062BD',
         prmDark: '#523771',
         secondery: '#140C25',
+        lightBg: '#E5E5E5',
+        menuBg: '#190F2F',
+        footerBg: '#E8E7EB',
       },
       fontFamily: {
         gpThin: ['Goldplay thin'],
