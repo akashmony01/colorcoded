@@ -58,13 +58,14 @@ $(document).ready(function(){
     // main filter box
     $(".tmbImg").click(function(){
         var curentImg = $(this).find("img").attr("src");
+        var currentSlider = $(this).parents(".cImgSlider");
 
         // set thumb active
-        $(".tmbImg").removeClass("border-primary opacity-60");
+        $(this).siblings(".tmbImg").removeClass("border-primary opacity-60");
         $(this).addClass("border-primary opacity-60");
 
         // set src for main img
-        $('#mainImg').attr('src', curentImg);
+        $(currentSlider).find('#mainImg').attr('src', curentImg);
 
     });
 });
