@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout page</title>
+    <!-- owl carousel styling -->
+    <link rel="stylesheet" href="build/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="build/owl/owl.theme.default.css">
+    <!-- custom styling -->
+    <link rel="stylesheet" href="build/css/main.css">
+</head>
+<body>
+    <header class="font-gpSemiBold">
+        <div class="container relative">
+            <div class="flex items-center justify-between gap-4 py-4">
+                <a href="" class="block">
+                    <img style="width: 231px;" class="max-w-full" src="build/img/logo.png" alt="logo">
+                </a>
+                <form style="width: 621px;" class="hidden md:block max-w-full relative text-primary" action="">
+                    <input class="w-full px-4 py-3 pr-14 rounded-full bg-footerBg font-gpMedium outline-none" type="text" placeholder="Search e.g Waistcoat">
+                    <button class="absolute top-2/4 right-5 transform -translate-y-2/4" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                </form>
+                <ul class="flex items-center gap-2 text-primary">
+                    <li class="hidden md:block">
+                        <a href="">
+                            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="md:hidden">
+                        <a id="mobileBtn" class="cursor-pointer">
+                            <svg id="mobileOpen" class="duration-300 transform opacity-100 h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                            <svg id="mobileClose" class="duration-300 transform -mt-8 opacity-0 h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <ul id="mobileMenu" class="max-h-0 overflow-hidden duration-300 absolute top-full left-0 right-0 z-50 md:hidden bg-prmDark text-white">
+                    <li class="bg-primary py-5 px-4">
+                        <form class="max-w-full relative text-primary" action="">
+                            <input class="bg-white w-full px-4 py-3 pr-14 rounded-full bg-gray-100 outline-none" type="text" placeholder="Search e.g Waistcoat">
+                            <button class="absolute top-2/4 right-5 transform -translate-y-2/4" type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg>
+                            </button>
+                        </form>
+                    </li>
+                    <li>
+                        <a class="block py-5 px-4 hover:bg-primary" href="">
+                            Coats & Jackets
+                        </a>
+                    </li>
+                    <li>
+                        <a class="subBtn cursor-pointer flex items-center justify-between py-5 px-4 hover:bg-primary">
+                            Polos & T-shirts
+                            <span class="ml-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </a>
+                        <ul class="subMenu duration-300 max-h-0 overflow-hidden bg-primary">
+                            <li>
+                                <a class="block py-5 px-4 hover:bg-primary" href="">
+                                    Hoodies & Sweatshirts
+                                </a>
+                            </li>
+                            <li>
+                                <a class="block py-5 px-4 hover:bg-primary" href="">
+                                    Shorts & Trousers
+                                </a>
+                            </li>
+                            <li>
+                                <a class="block py-5 px-4 hover:bg-primary" href="">
+                                    Headwear
+                                </a>
+                            </li>
+                            <li>
+                                <a class="block py-5 px-4 hover:bg-primary" href="">
+                                    Hi-viz
+                                </a>
+                            </li>
+                            <li>
+                                <a class="block py-5 px-4 hover:bg-primary" href="">
+                                    Accessories
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="block py-5 px-4 hover:bg-primary" href="">
+                            Hoodies & Sweatshirts
+                        </a>
+                    </li>
+                    <li>
+                        <a class="block py-5 px-4 hover:bg-primary" href="">
+                            Shorts & Trousers
+                        </a>
+                    </li>
+                    <li>
+                        <a class="block py-5 px-4 hover:bg-primary" href="">
+                            Headwear
+                        </a>
+                    </li>
+                    <li>
+                        <a class="block py-5 px-4 hover:bg-primary" href="">
+                            Hi-viz
+                        </a>
+                    </li>
+                    <li>
+                        <a class="block py-5 px-4 hover:bg-primary" href="">
+                            Accessories
+                        </a>
+                    </li>
+                    <li>
+                        <a class="subBtn cursor-pointer flex items-center justify-between py-5 px-4 hover:bg-primary">
+                            Choose Sector
+                            <span class="ml-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </a>
+                        <ul class="subMenu duration-300 max-h-0 overflow-hidden bg-primary">
+                            <li>
+                                <a class="block py-5 px-4 hover:bg-primary" href="">
+                                    Hoodies & Sweatshirts
+                                </a>
+                            </li>
+                            <li>
+                                <a class="block py-5 px-4 hover:bg-primary" href="">
+                                    Shorts & Trousers
+                                </a>
+                            </li>
+                            <li>
+                                <a class="block py-5 px-4 hover:bg-primary" href="">
+                                    Headwear
+                                </a>
+                            </li>
+                            <li>
+                                <a class="block py-5 px-4 hover:bg-primary" href="">
+                                    Hi-viz
+                                </a>
+                            </li>
+                            <li>
+                                <a class="block py-5 px-4 hover:bg-primary" href="">
+                                    Accessories
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="block py-5 px-4 hover:bg-primary" href="">
+                            Accessories
+                        </a>
+                    </li>
+                    <li class="bg-primary">
+                        <a class="flex items-center py-5 px-4 hover:bg-primary" href="">
+                            <span class="mr-2">
+                                <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                </svg>
+                            </span>
+                            Login or Register
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-menuBg bg-opacity-10">
+            <ul class="flex items-center justify-start lg:justify-center overflow-x-auto whitespace-nowrap">
+                <li>
+                    <a class="block py-5 px-4 hover:bg-primary hover:text-white" href="">
+                        Coats & Jackets
+                    </a>
+                </li>
+                <li>
+                    <a class="block py-5 px-4 hover:bg-primary hover:text-white" href="">
+                        Polos & T-shirts
+                    </a>
+                </li>
+                <li>
+                    <a class="block py-5 px-4 hover:bg-primary hover:text-white" href="">
+                        Hoodies & Sweatshirts
+                    </a>
+                </li>
+                <li>
+                    <a class="block py-5 px-4 hover:bg-primary hover:text-white" href="">
+                        Shorts & Trousers
+                    </a>
+                </li>
+                <li>
+                    <a class="block py-5 px-4 hover:bg-primary hover:text-white" href="">
+                        Headwear
+                    </a>
+                </li>
+                <li>
+                    <a class="block py-5 px-4 hover:bg-primary hover:text-white" href="">
+                        Hi-viz
+                    </a>
+                </li>
+                <li>
+                    <a class="block py-5 px-4 hover:bg-primary hover:text-white" href="">
+                        Accessories
+                    </a>
+                </li>
+                <li>
+                    <a class="flex items-center py-5 px-4 hover:bg-primary hover:text-white" href="">
+                        Choose Sector
+                        <span class="ml-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="bg-menuBg bg-opacity-5 py-6 md:py-10">
+                <h3 class="container italic text-7xl md:text-8xl text-primary">
+                    Checkout
+                </h3>
+            </div>
+            <div class="py-10">
+                <div class="container">
+                    <div>
+                        <div class="mb-8 alrtBox">
+                            <h4 class="bg-primary bg-opacity-20 border-t-2 border-primary text-primary font-gpMedium py-4 px-6 rounded-lg">
+                                <span class="mr-1">
+                                    Returning customer?
+                                </span>
+                                <a class="alrtBtn cursor-pointer text-red-700 hover:text-prmDark">
+                                    Click here to login
+                                </a>
+                            </h4>
+                            <div class="alrtCnt duration-300 max-h-0 overflow-hidden">
+                                <form action="" class="p-6 border border-gray-400 rounded-lg font-gpMedium mt-8">
+                                    <p class="mb-3">
+                                        If you have shopped with us before, please enter your details below. If you are a new customer, please proceed to the Billing section.
+                                    </p>
+                                    <div class="flex flex-col md:flex-row gap-4 md:gap-8">
+                                        <div class="w-full md:w-6/12">
+                                            <label class="block mb-2 cursor-pointer" for="eml">
+                                                Username Name / Email
+                                                <span class="text-red-600">*</span>
+                                            </label>
+                                            <input id="eml" class="border border-gray-700 rounded-md py-2 px-3 w-full focus:outline-none" type="text">
+                                        </div>
+                                        <div class="w-full md:w-6/12">
+                                            <label class="block mb-2 cursor-pointer" for="pwd">
+                                                Password
+                                                <span class="text-red-600">*</span>
+                                            </label>
+                                            <input id="pwd" class="border border-gray-700 rounded-md py-2 px-3 w-full focus:outline-none" type="password">
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-wrap gap-4 py-4">
+                                        <button type="submit" class="text-gray-700 bg-gray-200 font-gpSemiBold px-6 py-2 rounded-md">
+                                            Login
+                                        </button>
+                                        <div class="flex items-center">
+                                            <input id="rmbr" class="mr-1" type="checkbox">
+                                            <label for="rmbr" class="cursor-pointer mt-0.5">
+                                                Remember me
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <a href="" class="inline-block text-red-700">
+                                        Lost your password?
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="alrtBox">
+                            <h4 class="bg-primary bg-opacity-20 border-t-2 border-primary text-primary font-gpMedium py-4 px-6 rounded-lg">
+                                <span class="mr-1">
+                                    Have a coupon
+                                </span>
+                                <a class="alrtBtn cursor-pointer text-red-700 hover:text-prmDark">
+                                    Click here to enter your code
+                                </a>
+                            </h4>
+                            <div class="alrtCnt duration-300 max-h-0 overflow-hidden">
+                                <form action="" class="p-6 border border-gray-400 rounded-lg font-gpMedium mt-8">
+                                    <label for="cpn" class="block mb-3 cursor-pointer">
+                                        If you have a coupon code, please apply it below.
+                                    </label>
+                                    <div class="flex flex-col md:flex-row gap-4 md:gap-8">
+                                        <div class="w-full md:w-6/12">
+                                            <input id="cpn" class="border border-gray-700 rounded-md py-2 px-3 w-full focus:outline-none" placeholder="Coupon Code" type="text">
+                                        </div>
+                                        <div class="w-full md:w-6/12">
+                                            <button type="submit" class="text-primary bg-primary bg-opacity-30 font-gpSemiBold px-6 py-2 rounded-md">
+                                                Apply Coupon
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="font-gpMedium pb-8 md:pb-14">
+            <form action="" class="container flex flex-col md:flex-row gap-10">
+                <div class="w-full md:w-6/12">
+                    <h4 class="text-primary text-4xl md:text-5xl mb-8 leading-none">
+                        Billing details
+                    </h4>
+                    <div class="">
+                        <div class="flex flex-col md:flex-row gap-x-6">
+                            <div class="w-full md:w-6/12 mb-4">
+                                <label class="block cursor-pointer mb-2" for="fn">
+                                    First Name
+                                    <span class="text-red-600">*</span>
+                                </label>
+                                <input id="fn" class="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none" type="text">
+                            </div>
+                            <div class="w-full md:w-6/12 mb-4">
+                                <label class="block cursor-pointer mb-2" for="ln">
+                                    Last Name
+                                    <span class="text-red-600">*</span>
+                                </label>
+                                <input id="ln" class="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none" type="text">
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block cursor-pointer mb-2" for="cn">
+                                Company name (optional)
+                            </label>
+                            <input id="cn" class="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none" type="text">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block cursor-pointer mb-2" for="cr">
+                                Country / Region
+                                <span class="text-red-600">*</span>
+                            </label>
+                            <select id="cr" class="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none bg-white cursor-pointer">
+                                <option value="">
+                                    Bangladesh
+                                </option>
+                                <option value="">
+                                    Japan
+                                </option>
+                                <option value="">
+                                    Ukrane
+                                </option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block cursor-pointer mb-2" for="sa">
+                                Street Addcess
+                                <span class="text-red-600">*</span>
+                            </label>
+                            <input id="sa" class="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none mb-4" placeholder="House number and street name" type="text">
+                            <input id="sa1" class="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none" placeholder="Apartment, suit, unit etc (optional)" type="text">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block cursor-pointer mb-2" for="tc">
+                                Town / City
+                                <span class="text-red-600">*</span>
+                            </label>
+                            <input id="tc" class="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none" type="text">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block cursor-pointer mb-2" for="cr">
+                                State
+                                <span class="text-red-600">*</span>
+                            </label>
+                            <select id="cr" class="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none bg-white cursor-pointer">
+                                <option value="">
+                                    Mymensingh
+                                </option>
+                                <option value="">
+                                    Dhaka
+                                </option>
+                                <option value="">
+                                    Chattogram
+                                </option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block cursor-pointer mb-2" for="zp">
+                                ZIP
+                                <span class="text-red-600">*</span>
+                            </label>
+                            <input id="zp" class="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none" type="text">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block cursor-pointer mb-2" for="ph">
+                                Phone
+                                <span class="text-red-600">*</span>
+                            </label>
+                            <input id="ph" class="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none" type="text">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block cursor-pointer mb-2" for="eml">
+                                Email address
+                                <span class="text-red-600">*</span>
+                            </label>
+                            <input id="eml" class="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none" type="email">
+                        </div>
+                        <div class="chkToggleBox mb-4">
+                            <div class="flex items-center cursor-pointer mb-2 cursor-pointer">
+                                <input id="nacc" class="chkToggleBtn mr-1 mb-0.5" type="checkbox">
+                                <label for="nacc" class="cursor-pointer">
+                                    Create an account?
+                                </label>
+                            </div>
+                            <div class="chkToggleCnt duration-300 max-h-0 overflow-hidden">
+                                <input id="eml" class="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none" type="email">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chkToggleBox w-full md:w-6/12">
+                    <h4 class="flex items-center text-primary text-4xl md:text-5xl mb-8 leading-none">
+                        <input id="shp" class="chkToggleBtn mt-0.5 mr-2" type="checkbox">
+                        <label for="shp" class="cursor-pointer">
+                            Ship to a different address?
+                        </label>
+                    </h4>
+                    <div class="chkToggleCnt duration-300 max-h-0 overflow-hidden">
+                        <div class="flex flex-col md:flex-row gap-x-6">
+                            <div class="w-full md:w-6/12 mb-4">
+                                <label class="block cursor-pointer mb-2" for="fn">
+                                    First Name
+                                    <span class="text-red-600">*</span>
+                                </label>
+                                <input id="fn" class="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none" type="text">
+                            </div>
+                            <div class="w-full md:w-6/12 mb-4">
+                                <label class="block cursor-pointer mb-2" for="ln">
+                                    Last Name
+                                    <span class="text-red-600">*</span>
+                                </label>
+                                <input id="ln" class="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none" type="text">
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block cursor-pointer mb-2" for="cn">
+                                Company name (optional)
+                            </label>
+                            <input id="cn" class="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none" type="text">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block cursor-pointer mb-2" for="cr">
+                                Country / Region
+                                <span class="text-red-600">*</span>
+                            </label>
+                            <select id="cr" class="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none bg-white cursor-pointer">
+                                <option value="">
+                                    Bangladesh
+                                </option>
+                                <option value="">
+                                    Japan
+                                </option>
+                                <option value="">
+                                    Ukrane
+                                </option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block cursor-pointer mb-2" for="sa">
+                                Street Addcess
+                                <span class="text-red-600">*</span>
+                            </label>
+                            <input id="sa" class="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none mb-4" placeholder="House number and street name" type="text">
+                            <input id="sa1" class="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none" placeholder="Apartment, suit, unit etc (optional)" type="text">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block cursor-pointer mb-2" for="tc">
+                                Town / City
+                                <span class="text-red-600">*</span>
+                            </label>
+                            <input id="tc" class="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none" type="text">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block cursor-pointer mb-2" for="pcd">
+                                POstcode
+                                <span class="text-red-600">*</span>
+                            </label>
+                            <input id="pcd" class="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none" type="text">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block cursor-pointer mb-2" for="msg">
+                            Order notes (optional)
+                        </label>
+                        <textarea id="msg" class="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none" placeholder="Notes aboutu order"></textarea>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <!-- footer esction -->
+    <footer class="bg-footerBg">
+        <div class="py-8 md:py-16 bg-secondery">
+            <div class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-white">
+                <div>
+                    <h5 class="text-base text-primary mb-4">
+                        Help & Information
+                    </h5>
+                    <ul class="text-sm">
+                        <li>
+                            <a href="">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Track Order
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Delivery & Returns
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Premier Delivery
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-base text-primary mb-4">
+                        Sectors
+                    </h5>
+                    <ul class="text-sm">
+                        <li>
+                            <a href="">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Track Order
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Delivery & Returns
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Premier Delivery
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-base text-primary mb-4">
+                        Products
+                    </h5>
+                    <ul class="text-sm">
+                        <li>
+                            <a href="">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Track Order
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Delivery & Returns
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Premier Delivery
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-base text-primary mb-4">
+                        Enquiries
+                    </h5>
+                    <p class="text-sm">
+                        <span class="inline-block">1234567890</span>
+                        <span class="inline-block">enquiries@colorcoded.co.uk</span>
+                    </p>
+                    <ul class="flex items-center flex-wrap gap-x-3 gap-y-2 text-sm">
+                        <li>
+                            <a href="">
+                                <img class="h-5 w-auto" src="build/img/ln.png" alt="sc">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="h-5 w-auto" src="build/img/tt.png" alt="sc">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="h-5 w-auto" src="build/img/ig.png" alt="sc">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="h-5 w-auto" src="build/img/fcbk.png" alt="sc">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-sm">
+            <div class="py-4 text-sm container flex flex-wrap items-center justify-between gap-4">
+                <p class="mb-0">
+                    © 2021 Color Coded
+                </p>
+                <ul class="hidden md:flex items-center justify-center gap-x-3 gap-y-2">
+                    <li>
+                        <a href="">
+                            <img class="h-8" src="build/img/wp.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="h-8" src="build/img/vsa.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="h-8" src="build/img/msd.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="h-8" src="build/img/mro.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="h-8" src="build/img/jcb.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="flex items-center gap-2">
+                    <li class="border-r border-secondery pr-2">
+                        <a href="">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li class="border-r border-secondery pr-2">
+                        <a href="">
+                            Ts&Cs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Accesibility
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="md:hidden bg-white py-3 w-full">
+                <ul class="container flex flex-wrap items-center justify-center gap-x-3 gap-y-2">
+                    <li>
+                        <a href="">
+                            <img class="h-8" src="build/img/wp.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="h-8" src="build/img/vsa.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="h-8" src="build/img/msd.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="h-8" src="build/img/mro.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="h-8" src="build/img/jcb.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jquer script -->
+    <script src="build/js/jquery.min.js"></script>
+    <!-- owl carousel script -->
+    <script src="build/owl/owl.carousel.min.js"></script>
+    <!-- custom script -->
+    <script src="build/js/main.js"></script>
+</body>
+</html>

@@ -69,3 +69,20 @@ $(document).ready(function(){
 
     });
 });
+
+// toggle box open close
+$(document).ready(function(){
+    // main alert box
+    $(".alrtBtn").click(function(){
+        var currentBox = $(this).parents(".alrtBox");
+        // set thumb active
+        $(currentBox).find(".alrtCnt").toggleClass("max-h-screen oveflow-y-scroll");
+    });
+
+    // checkbox toggle open close
+    $(".chkToggleBtn").change(function() {
+        var currentBox = $(this).parents(".chkToggleBox");
+        // set thumb active
+        $(currentBox).find(".chkToggleCnt").toggleClass("max-h-screen oveflow-y-scroll");
+    }).triggerHandler('click');
+});
